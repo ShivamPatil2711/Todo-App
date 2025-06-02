@@ -1,0 +1,29 @@
+.Row{
+color:rgb(255, 0, 217);
+font-size: 1.2rem;
+}
+.delete{
+  font-size: 1.3rem;
+}
+.completedBox {
+  opacity: 0.5;
+  background: linear-gradient(90deg, #b2ffb2 0%, #c8e6c9 100%);
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.08);
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.completedBox::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 18px; 
+  height: 2px;
+  background: #26a69a;
+  opacity: 0.5;
+  border-radius: 1px;
+  pointer-events: none;
+  z-index: 2;
+}

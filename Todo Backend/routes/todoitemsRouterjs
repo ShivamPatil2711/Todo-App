@@ -1,0 +1,8 @@
+const express=require("express");
+const todoItemsRouter=express.Router();
+const todoItemsController= require("../controllers/todoItemsController");
+todoItemsRouter.get("/",(todoItemsController.getTodoItems));
+todoItemsRouter.post("/",(todoItemsController.createTodoItem));
+todoItemsRouter.delete("/delete/:id",(todoItemsController.deleteTodoItem));
+todoItemsRouter.put("/update/:id/completed",(todoItemsController.updateTodoItem));
+module.exports=todoItemsRouter;

@@ -1,0 +1,6 @@
+.Heading{
+  color:blueviolet;
+  font-size:50px;
+  filter: drop-shadow(3px 0px 1px red);
+  margin-bottom:15px;
+}

@@ -1,0 +1,6 @@
+.message{
+  color:blueviolet;
+  font-size:40px;
+  filter: drop-shadow(3px 0px 1px red);
+  margin-bottom:20px;
+}
